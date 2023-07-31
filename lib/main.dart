@@ -33,17 +33,20 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: Text('Flutter Container'),
+      appBar: AppBar(
+        title: Text('Center Widget'),
+      ),
+
+      body: Center(
+        child: Container(
+          width: 415,
+          height: 715,
+          color: Colors.lightBlue,
+          child: Center(child: Text('This is the Center of the Container',
+                 style: TextStyle(color: Color.fromARGB(255, 255, 60, 0),fontSize: 25),)),
         ),
-        body: Center(
-          child: Container(
-              height: 200,
-              width: 200,
-              color: Colors.cyan,
-              child: Center(
-                child: Text('Hello Paradox'),
-              )),
-        ));
+      ),
+
+    );
   }
 }
