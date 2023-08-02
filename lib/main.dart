@@ -33,20 +33,40 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Text'),
-      ),
+        appBar: AppBar(
+          title: Text('Buttons'),
+        ),
+        body:
+            // Center(
+            //   child: TextButton(
+            //     child: Text('Click Here!'),
+            //     onPressed: () {
+            //       print("I was clicked!");
+            //     }, // TODO: implement onClick event handler here...
+            //     onLongPress: () {
+            //       print("List Opened!");
+            //     },
+            //   ),
+            // ),
 
-      body: Center(child: Text('Hello Paradox',
-      style: TextStyle(
-        fontSize: 25,
-        color: Colors.blueAccent,
-        fontWeight: FontWeight.bold,
-        backgroundColor: Color.fromARGB(255, 148, 255, 82)
-         ),
+            //       Center(
+            //         child: ElevatedButton(
+            //     child: Text('Start!'),
+            //     onPressed: () {
+            //         print('Button Pressed!');
+            //     },
+            //     onLongPress: () {
+            //         print('You Lose.');
+            //     },
+            //   ),
+            //  )
+
+            OutlinedButton(
+          child: Text('OutLined Button'),
+          onPressed: () {
+            print('Outlined Pressed!');
+          },
         )
-      )
-
     );
   }
 }
