@@ -34,18 +34,18 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Center Widget'),
+        title: Text('Text'),
       ),
 
-      body: Center(
-        child: Container(
-          width: 415,
-          height: 715,
-          color: Colors.lightBlue,
-          child: Center(child: Text('This is the Center of the Container',
-                 style: TextStyle(color: Color.fromARGB(255, 255, 60, 0),fontSize: 25),)),
-        ),
-      ),
+      body: Center(child: Text('Hello Paradox',
+      style: TextStyle(
+        fontSize: 25,
+        color: Colors.blueAccent,
+        fontWeight: FontWeight.bold,
+        backgroundColor: Color.fromARGB(255, 148, 255, 82)
+         ),
+        )
+      )
 
     );
   }
