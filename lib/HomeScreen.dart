@@ -7,13 +7,75 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text("Add Image"),
+          title: Text("Rows & Columns"),
         ),
-        body: Center(
-          child: Container(
-            height: 300,
-            width: 300,
-            child: Image.asset('assets/images/Neontube.png')),
-        ));
+        body: Container(
+         width: 415,
+         height: 715,  
+          color: Colors.blue,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                'A',
+                style: TextStyle(fontSize: 25),
+              ),
+              Text(
+                'B',
+                style: TextStyle(fontSize: 25),
+              ),
+              Text(
+                'C',
+                style: TextStyle(fontSize: 25),
+              ),
+              Text(
+                'D',
+                style: TextStyle(fontSize: 25),
+              ),
+              Text(
+                'F',
+                style: TextStyle(fontSize: 25),
+              ),
+            ]
+           ),
+              Text(
+                'A',
+                style: TextStyle(fontSize: 25),
+              ),
+              Text(
+                'B',
+                style: TextStyle(fontSize: 25),
+              ),
+              Text(
+                'C',
+                style: TextStyle(fontSize: 25),
+              ),
+              Text(
+                'D',
+                style: TextStyle(fontSize: 25),
+              ),
+              Text(
+                'F',
+                style: TextStyle(fontSize: 25),
+              ),
+              ElevatedButton(
+                  child: Text('Click'),
+                  onPressed: () {
+                    print('Got Clicked!');
+                  }),
+
+                        
+
+            ],
+          ),
+
+          
+        )
+        );
   }
 }
