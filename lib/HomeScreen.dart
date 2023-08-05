@@ -7,75 +7,34 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text("Rows & Columns"),
+          title: Text("InkWell Widget"),
         ),
-        body: Container(
-         width: 415,
-         height: 715,  
-          color: Colors.blue,
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                'A',
-                style: TextStyle(fontSize: 25),
-              ),
-              Text(
-                'B',
-                style: TextStyle(fontSize: 25),
-              ),
-              Text(
-                'C',
-                style: TextStyle(fontSize: 25),
-              ),
-              Text(
-                'D',
-                style: TextStyle(fontSize: 25),
-              ),
-              Text(
-                'F',
-                style: TextStyle(fontSize: 25),
-              ),
-            ]
-           ),
-              Text(
-                'A',
-                style: TextStyle(fontSize: 25),
-              ),
-              Text(
-                'B',
-                style: TextStyle(fontSize: 25),
-              ),
-              Text(
-                'C',
-                style: TextStyle(fontSize: 25),
-              ),
-              Text(
-                'D',
-                style: TextStyle(fontSize: 25),
-              ),
-              Text(
-                'F',
-                style: TextStyle(fontSize: 25),
-              ),
-              ElevatedButton(
-                  child: Text('Click'),
-                  onPressed: () {
-                    print('Got Clicked!');
-                  }),
-
-                        
-
-            ],
+        body: Center(
+          child: InkWell(
+            onTap: () {
+              print('Got Tapped!');
+            },
+            onDoubleTap: () {
+              print('Got Double-Tapped!');
+            },
+            onLongPress: () {
+              print('Got LongPressed!');
+            },
+            child: Container(
+              width: 200,
+              height: 75,
+              color: Colors.green,
+              child: Center(
+                  child: InkWell(
+                      onTap: () {
+                        print('Text got Tapped!');
+                      },
+                      child: Text(
+                        'Click Here!',
+                        style: TextStyle(fontSize: 25),
+                      ))),
+            ),
           ),
-
-          
-        )
-        );
+        ));
   }
 }
