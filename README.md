@@ -9,7 +9,7 @@
 <tr>                    
 
    
-   <th> Row & Column View</th>
+   <th> InkWell View</th>
 </tr>  
   
   
@@ -19,9 +19,8 @@
 
 
  <td>
-  <img src="https://github.com/yasin9064/flutter_application_1/assets/108936278/940ce0a8-1659-469e-91ff-982daf629eae" width="260"/>
+  <img src="https://github.com/yasin9064/flutter_application_1/assets/108936278/bb441300-54f0-462e-bf0e-ad9ca41975ef" width="260"/>
 </td>
-  
 
 </tr>
 
