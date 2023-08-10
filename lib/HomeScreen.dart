@@ -5,17 +5,8 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var arrNames = [
-      'Asim',
-      'Yasin',
-      'Artaza',
-      'Zishan',
-      'Amar',
-      'Tarique',
-      'Meraj',
-      'Raunaque',
-      'Maher'
-    ];
+    
+
 
     return Scaffold(
         appBar: AppBar(
