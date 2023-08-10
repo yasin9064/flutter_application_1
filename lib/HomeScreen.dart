@@ -5,91 +5,39 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var arrNames = [
+      'Asim',
+      'Yasin',
+      'Artaza',
+      'Zishan',
+      'Amar',
+      'Tarique',
+      'Meraj',
+      'Raunaque',
+      'Maher'
+    ];
+
     return Scaffold(
         appBar: AppBar(
-          title: Text("InkWell Widget"),
+          title: Text("List View"),
         ),
-        body: Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: SingleChildScrollView(
-            child: Column(
-              children: [
-                Padding(
-                  padding: const EdgeInsets.only(bottom: 11),
-                  child: SingleChildScrollView(
-                    scrollDirection: Axis.horizontal,
-                    child: Row(
-                      children: [
-                        Container(
-                          margin: EdgeInsets.only(right: 11),                  
-                          height: 200,
-                          width: 200,
-                          color: Colors.lightBlue,
-                        ),
-                        Container(
-                          margin: EdgeInsets.only(right: 11),                  
-                          height: 200,
-                          width: 200,
-                          color: Colors.grey,
-                        ),
-                        Container(
-                          margin: EdgeInsets.only(right: 11),                  
-                          height: 200,
-                          width: 200,
-                          color: Colors.pink,
-                        ),
-                        Container(
-                          margin: EdgeInsets.only(right: 11),                  
-                          height: 200,
-                          width: 200,
-                          color: Colors.green,
-                        ),
-                        Container(
-                          margin: EdgeInsets.only(right: 11),                  
-                          height: 200,
-                          width: 200,
-                          color: Colors.red,
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-                Container(
-                  margin: EdgeInsets.only(bottom: 11),                 
-                  height: 200,
-                  color: Colors.purple,
-                ),
-                Container(
-                  margin: EdgeInsets.only(bottom: 11),                 
-                  height: 200,
-                  color: Colors.orange,
-                ),
-                Container(
-                  margin: EdgeInsets.only(bottom: 11),                 
-                  height: 200,
-                  color: Colors.lightGreen,
-                ),
-                Container(
-                  margin: EdgeInsets.only(bottom: 11),                  
-                  height: 200,
-                  color: Colors.yellow,
-                ),
-                Container(
-                  margin: EdgeInsets.only(bottom: 11),
-                  height: 200,
-                  color: Colors.red,
-                ),
-                Container(
-                  margin: EdgeInsets.only(bottom: 11),
-                  height: 200,
-                  color: Colors.black,
-                ),
-              ],
-            ),
-          ),
+        body: ListView.separated(
+          itemBuilder: (context, index) {
+            return Text(
+              arrNames[index],
+              style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+            );
+          },
+          itemCount: arrNames.length,
+          separatorBuilder: (context, index) {
+            return Divider(
+              height: 100,
+              thickness: 4,
+            );
+          },
         )
-        
-        
-        );
+    );
   }
 }
+
+class rerturn {}
