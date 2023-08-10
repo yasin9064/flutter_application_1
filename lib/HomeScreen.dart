@@ -21,23 +21,34 @@ class HomeScreen extends StatelessWidget {
         appBar: AppBar(
           title: Text("List View"),
         ),
-        body: ListView.separated(
-          itemBuilder: (context, index) {
-            return Text(
-              arrNames[index],
-              style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
-            );
-          },
-          itemCount: arrNames.length,
-          separatorBuilder: (context, index) {
-            return Divider(
-              height: 100,
-              thickness: 4,
-            );
-          },
-        )
+        body: Container(
+          width: double.infinity,
+          height: double.infinity,
+           child: Center(
+             child: Container(
+             width: 150,
+             height: 150,
+             decoration: BoxDecoration(
+              color: Colors.grey,
+              // borderRadius: BorderRadius.circular(24),
+              border: Border.all(
+                width: 3,
+                color: Colors.red,
+              ),
+              boxShadow: [
+                BoxShadow(
+                  blurRadius: 21,
+                  color: Colors.cyan,
+                  spreadRadius: 21
+                )
+              ],
+              shape: BoxShape.circle
+        ),
+       ),
+      )
+     )
     );
   }
 }
 
-class rerturn {}
+
