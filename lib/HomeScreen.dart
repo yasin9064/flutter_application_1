@@ -12,39 +12,14 @@ class HomeScreen extends StatelessWidget {
         appBar: AppBar(
           title: Text("Expanded Widget"),
         ),
-        body: Column(
-          children: [
-            Expanded(
-              flex: 3,
-              child: Container(
-                height: 100,
-                color: Colors.black,
-              )
-            ),
-            Expanded(
-              flex: 5,
-              child: Container(
-                height: 100,
-                color: Colors.blue,
-              )
-            ),
-            Expanded(
-              flex:2,
-              child: Container(
-                height: 100,
-                color: Colors.brown,
-              )
-            ),
-            Expanded(
-              flex: 3,
-              child: Container(
-                height: 100,
-                color: Colors.orange
-              )
-            ),
-
-          ],
-      )
+        body: Container(
+          color: Colors.cyan,
+          margin: EdgeInsets.only(top: 30, left: 40),
+          child: Padding(
+            padding: const EdgeInsets.all(20),
+            child: Text('Paradox!',style: TextStyle(fontSize: 30,color: Colors.black),),
+          ),
+        )
     );
   }
 }
