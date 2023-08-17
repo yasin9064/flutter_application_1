@@ -7,9 +7,8 @@
   
   
 <tr>                    
-<th> 1st Expanded`View</th>
-<th> 2nd ExpandedView</th>   
-  
+<th> 1st ListTile View</th>
+
 </tr>  
   
   
@@ -19,11 +18,10 @@
 
 
  <td>
-  <img src="https://github.com/yasin9064/flutter_application_1/assets/108936278/e05e2361-278d-4168-ab2f-98598b4daa17" width="260"/>
+  <img src="https://github.com/yasin9064/flutter_application_1/assets/108936278/e96d6fd3-76a7-4ced-9fcf-73cec24191fa" width="260"/>
 </td>
-<td>
-  <img src="https://github.com/yasin9064/flutter_application_1/assets/108936278/c7fa2815-0186-4506-9b21-06a48c2056b3" width="260"/>
-</td>
+
+
 
 
 </tr>
