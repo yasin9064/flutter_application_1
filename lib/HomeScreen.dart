@@ -9,29 +9,12 @@ class HomeScreen extends StatelessWidget {
    
     return Scaffold(
         appBar: AppBar(
-          title: Text("Circle Avatar"),
+          title: Text("Custom Fonts"),
         ),
         body: Center(
-          child: CircleAvatar(
-            child: Container(
-              width: 60,
-              height: 60,
-              child: Column(
-                children: [
-                  Container(
-                    width: 40,
-                    height: 40,
-                    child: Image.asset('assets/images/Black-Avatar.png')),
-                    Text('Name', style: TextStyle(color: Colors.black, fontSize: 15),
-                  )
-                ],
-                ),
-            ),
-            
-            backgroundColor: Colors.limeAccent,
-            maxRadius: 70,
-            ),
-        )
+          child: Text('Paradox', style: TextStyle(fontFamily: 'Caprasimo', fontSize: 50),
+          )
+          )
       );
   }
 }
