@@ -7,7 +7,7 @@
   
   
 <tr>                    
-<th> 1st ListTile View</th>
+<th> 1st CircleAvatar View</th>
 
 </tr>  
   
@@ -18,9 +18,8 @@
 
 
  <td>
-  <img src="https://github.com/yasin9064/flutter_application_1/assets/108936278/e96d6fd3-76a7-4ced-9fcf-73cec24191fa" width="260"/>
+  <img src="https://github.com/yasin9064/flutter_application_1/assets/108936278/4755df91-0742-444a-9808-d18b85751974" width="260"/>
 </td>
-
 
 
 
