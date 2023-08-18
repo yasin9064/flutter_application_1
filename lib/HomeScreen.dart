@@ -5,37 +5,33 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var arrNames = [
-      'Asim',
-      'Yasin',
-      'Artaza',
-      'Zishan',
-      'Amar',
-      'Tarique',
-      'Meraj',
-      'Raunaque',
-      'Maher'
-    ];
-    // var arrNumbers = ['1, 2, 3, 4, 5, 6, 7, 8, 9'];
+    
+   
     return Scaffold(
         appBar: AppBar(
-          title: Text("List Tile"),
+          title: Text("Circle Avatar"),
         ),
-        body: ListView.separated(
-            itemBuilder: (context, index) {
-              return ListTile(
-                leading: Text('${index+1}'),
-                title: Text(arrNames[index]),
-                subtitle: Text('Number'),
-                trailing: Icon(Icons.add),
-              );
-            },
-            itemCount: arrNames.length,
-            separatorBuilder: (context, index) {
-              return Divider(
-                height: 20,
-                thickness: 1,
-              );
-            }));
+        body: Center(
+          child: CircleAvatar(
+            child: Container(
+              width: 60,
+              height: 60,
+              child: Column(
+                children: [
+                  Container(
+                    width: 40,
+                    height: 40,
+                    child: Image.asset('assets/images/Black-Avatar.png')),
+                    Text('Name', style: TextStyle(color: Colors.black, fontSize: 15),
+                  )
+                ],
+                ),
+            ),
+            
+            backgroundColor: Colors.limeAccent,
+            maxRadius: 70,
+            ),
+        )
+      );
   }
 }
