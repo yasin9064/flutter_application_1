@@ -7,8 +7,8 @@
   
   
 <tr>                    
-<th> 1st CustomFont View</th>
-<th> 2nd CustomFont View</th>
+<th> 1st Theme View</th>
+<th> 2nd Theme View</th>
 
 </tr>  
   
@@ -19,11 +19,11 @@
 
 
  <td>
-  <img src="https://github.com/yasin9064/flutter_application_1/assets/108936278/010af688-3142-4d10-9956-cd4cadd7fcee" width="260"/>
+  <img src="https://github.com/yasin9064/flutter_application_1/assets/108936278/5acec841-5f37-4800-9b74-f7d041546c95" width="260"/>
  </td>
 
   <td>
-  <img src="https://github.com/yasin9064/flutter_application_1/assets/108936278/159d1149-8ae3-4ab3-9d44-bf0ec9ed95ed" width="260"/>
+  <img src="https://github.com/yasin9064/flutter_application_1/assets/108936278/38c35dec-eba3-4ae9-b5d7-afcba92cefcd" width="260"/>
   </td>
 
 
