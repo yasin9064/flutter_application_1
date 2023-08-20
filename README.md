@@ -7,8 +7,7 @@
   
   
 <tr>                    
-<th> 1st Theme View</th>
-<th> 2nd Theme View</th>
+<th> 1st Card View</th>
 
 </tr>  
   
@@ -19,12 +18,11 @@
 
 
  <td>
-  <img src="https://github.com/yasin9064/flutter_application_1/assets/108936278/5acec841-5f37-4800-9b74-f7d041546c95" width="260"/>
+  <img src="https://github.com/yasin9064/flutter_application_1/assets/108936278/e9661c46-df38-4882-8432-f5b845bc0258" width="260"/>
  </td>
 
-  <td>
-  <img src="https://github.com/yasin9064/flutter_application_1/assets/108936278/38c35dec-eba3-4ae9-b5d7-afcba92cefcd" width="260"/>
-  </td>
+ 
+
 
 
 
