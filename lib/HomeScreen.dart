@@ -10,19 +10,18 @@ class HomeScreen extends StatelessWidget {
    
     return Scaffold(
         appBar: AppBar(
-          title: Text("Style & Theme"),
+          title: Text("Card Widget"),
         ),
         body: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Text('Lord', style: Theme.of(context).textTheme.headline1!.copyWith(color: Colors.deepOrange),),
-              Text('Lord', style: Theme.of(context).textTheme.subtitle1,),
-              Text('Paradox', style: Theme.of(context).textTheme.headline1!.copyWith(color: Colors.indigo),),
-              Text('Paradox', style: myTextStyle15(textColor: Colors.red),),
-            ],
-          ),
-        ),
+          child: Card(
+            shadowColor: Colors.cyan,
+            color: Colors.black,
+            elevation: 20,
+            child: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Text('Paradox', style: TextStyle(fontSize: 40, color: Colors.cyan),),
+          )),
+        )
       );
   }
 }
