@@ -6,22 +6,86 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    
-   
+    var emailText = TextEditingController();
+    var passText = TextEditingController();
     return Scaffold(
         appBar: AppBar(
-          title: Text("Card Widget"),
+          title: Text("Input Field"),
         ),
         body: Center(
-          child: Card(
-            shadowColor: Colors.cyan,
-            color: Colors.black,
-            elevation: 20,
-            child: Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Text('Paradox', style: TextStyle(fontSize: 40, color: Colors.cyan),),
-          )),
-        )
-      );
+            child: Container(
+          width: 300,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              TextField(
+                controller: emailText,
+                keyboardType: TextInputType.emailAddress,      
+                decoration: InputDecoration(
+                  hintText: 'Enter Email',
+                    focusedBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(15),
+                        borderSide: BorderSide(
+                          color: Colors.deepOrange,
+                          width: 2.5,
+                        )),
+                    enabledBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(15),
+                        borderSide: BorderSide(
+                          color: Colors.blue,
+                          width: 1.5,
+                        )),
+                    prefixIcon: Icon(
+                      Icons.email,
+                      color: Colors.blueGrey,
+                    )),
+              ),
+              Container(
+                height: 11,
+              ),
+              TextField(
+                controller: passText,
+                obscureText: true,
+                keyboardType: TextInputType.phone,
+                decoration: InputDecoration(
+                  hintText: 'Enter Password',
+                  focusedBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(15),
+                      borderSide: BorderSide(
+                        color: Colors.deepOrange,
+                        width: 2.5,
+                      )),
+                  enabledBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(15),
+                      borderSide: BorderSide(
+                        color: Colors.blue,
+                        width: 1.5,
+                      )),
+                  prefixIcon: Icon(
+                    Icons.lock,
+                    color: Colors.blueGrey,
+                  ),
+                  suffixIcon: IconButton(
+                    icon: Icon(Icons.remove_red_eye, color: Colors.blueGrey),
+                    onPressed: () {
+                      
+                    },
+                  ),
+                ),
+              ),
+              Container(height: 8),
+              ElevatedButton(
+                  onPressed: () {
+                    String userEmail = emailText.text.toString();
+                    String userPassword = passText.text;
+
+                    print('Email: $userEmail, Password: userPassword');
+                  },
+                  child: Text(
+                    'Login',
+                  ))
+            ],
+          ),
+        )));
   }
 }
