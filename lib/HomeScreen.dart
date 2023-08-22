@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/UI_Helper/utii.dart';
+import 'package:intl/intl.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -24,7 +25,7 @@ class _HomeScreenState extends State<HomeScreen> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  'CurrentTime: ${time.hour}:${time.minute}:${time.second}',
+                  'CurrentTime: ${DateFormat('yMMMMEEEEd').format(time)}',
                   style: TextStyle(fontSize: 25),
                 ),
                 ElevatedButton(
