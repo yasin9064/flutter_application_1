@@ -7,8 +7,8 @@
   
   
 <tr>                    
-<th> 1st DateTime Picker View</th>
-<th> 2nd DateTime Picker View</th>  
+<th> 1st Date Picker View</th>
+<th> 2nd Time Picker View</th>  
 </tr>  
   
   
