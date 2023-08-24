@@ -14,46 +14,64 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
-    var datePicked = DateTime.now();
-    var timePicked = DateTime.now();
+    var arrColors = [
+      Colors.red,
+      Colors.blue,
+      Colors.yellow,
+      Colors.green,
+      Colors.pink,
+      Colors.black,
+      Colors.purple,
+      Colors.orange,
+      Colors.brown,
+    ];
     return Scaffold(
         appBar: AppBar(
-          title: Text("Date & Time"),
+          title: const Text("Grid VIew"),
         ),
-        body: Center(
-            child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text(
-              'Select Date',
-              style: TextStyle(fontSize: 25),
-            ),
-            ElevatedButton(
-                onPressed: () async {
-                  DateTime? datePicked = await showDatePicker(
-                      context: context,
-                      initialDate: DateTime.now(),
-                      firstDate: DateTime(2022),
-                      lastDate: DateTime(2024));
-                  if (datePicked != null) {
-                    print(
-                        'Date Selected: ${DateFormat('yMMMMd').format(datePicked)}');
-                  }
-                },
-                child: Text('Show')),
-            ElevatedButton(
-                onPressed: () async {
-                  TimeOfDay? timePicked = await showTimePicker(
-                      context: context,
-                      initialTime: TimeOfDay.now(),
-                      initialEntryMode: TimePickerEntryMode.dial);
-                  if (timePicked != null) {
-                    print('Time Selected: ${timePicked.hour}:${timePicked.minute}');
-                        
-                  }
-                },
-                child: Text('Select Time'))
-          ],
-        )));
+        body: GridView.builder(itemBuilder: (context, index) {
+          return Container(
+            color: arrColors[index],
+          );
+        }, itemCount: arrColors.length, gridDelegate:
+         SliverGridDelegateWithMaxCrossAxisExtent(maxCrossAxisExtent: 150,
+         crossAxisSpacing: 11,
+         mainAxisSpacing: 11,),
+        )
+
+        // GridView.count(
+        //   crossAxisCount: 3,
+        //   crossAxisSpacing: 11,
+        //   mainAxisSpacing: 11,
+        //   children: [
+        //     Container(color: arrColors[0]),
+        //     Container(color: arrColors[1]),
+        //     Container(color: arrColors[2]),
+        //     Container(color: arrColors[3]),
+        //     Container(color: arrColors[4]),
+        //     Container(color: arrColors[5]),
+        //     Container(color: arrColors[6]),
+        //     Container(color: arrColors[7]),
+        //     Container(color: arrColors[8]),
+        //   ],
+        // ),
+
+        // GridView.extent(maxCrossAxisExtent: 100,
+        // crossAxisSpacing: 11,
+        // mainAxisSpacing: 11,
+        // children: [
+        //     Container(color: arrColors[0]),
+        //     Container(color: arrColors[1]),
+        //     Container(color: arrColors[2]),
+        //     Container(color: arrColors[3]),
+        //     Container(color: arrColors[4]),
+        //     Container(color: arrColors[5]),
+        //     Container(color: arrColors[6]),
+        //     Container(color: arrColors[7]),
+        //     Container(color: arrColors[8]),
+        // ],
+        // )
+
+        );
   }
 }

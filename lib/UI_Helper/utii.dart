@@ -1,10 +1,8 @@
-import 'dart:io';
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 TextStyle myTextStyle11() {
-  return TextStyle(
+  return const TextStyle(
     fontSize: 11,
     fontWeight: FontWeight.bold,
   );

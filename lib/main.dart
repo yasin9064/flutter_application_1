@@ -15,12 +15,12 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
-        textTheme: TextTheme(
-          headline1: TextStyle(fontSize: 35, fontWeight: FontWeight.bold),
-          subtitle1: TextStyle(fontSize: 20, fontWeight: FontWeight.w500, fontStyle: FontStyle.italic),
+        textTheme: const TextTheme(
+          displayLarge: TextStyle(fontSize: 35, fontWeight: FontWeight.bold),
+          titleMedium: TextStyle(fontSize: 20, fontWeight: FontWeight.w500, fontStyle: FontStyle.italic),
         )
       ),
-      home: HomeScreen()
+      home: const HomeScreen()
     );
   }
 }
