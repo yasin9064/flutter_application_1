@@ -7,8 +7,8 @@
   
   
 <tr>                    
-<th>  View</th>
-<th>  View</th>  
+<th>  1st Widget View</th>
+<th>  2nd Widget View</th>  
 </tr>  
   
   
@@ -18,16 +18,13 @@
 
 
  <td>
-  <img src="" width="260"/>
+  <img src="https://github.com/yasin9064/flutter_application_1/assets/108936278/8e57ccbf-1796-4443-9acd-826839c8c1cc" width="260"/>
  </td>
  
  <td>
-  <img src="" width="260"/>
+  <img src="https://github.com/yasin9064/flutter_application_1/assets/108936278/ddaa8129-0d37-427c-9d6b-1ba173261eef" width="260"/>
  </td>
  
-)
-
-
 
 
 
