@@ -7,7 +7,7 @@
   
   
 <tr>                    
-<th>  1st Stack Widget View</th>
+<th>  Custom Widget View</th>
   
 </tr>  
   
@@ -19,7 +19,7 @@
 
 
  <td>
-  <img src="https://github.com/yasin9064/flutter_application_1/assets/108936278/079d53c3-5392-4e82-862f-87e1d82a94c0" width="260"/>
+  <img src="https://github.com/yasin9064/flutter_application_1/assets/108936278/06fae005-580d-48f8-ba06-eeee7f41b3cc" width="260"/>
  </td>
 
 
