@@ -1,9 +1,9 @@
 
 import 'package:flutter/material.dart';
 
-TextStyle myTextStyle11() {
+TextStyle myTextStyle17() {
   return const TextStyle(
-    fontSize: 11,
+    fontSize: 17,
     fontWeight: FontWeight.bold,
   );
 }

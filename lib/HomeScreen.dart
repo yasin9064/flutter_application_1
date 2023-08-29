@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/UI_Helper/utii.dart';
+import 'package:flutter_application_1/Widgets/Buttons.dart';
 import 'package:intl/intl.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -15,33 +16,42 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: const Text("Stack Widget"),
+      appBar: AppBar(
+        title: const Text("Custom Widget"),
+      ),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Container(
+              width: 150,
+              height: 50,
+              child: RoundedButton(
+                buttonName: 'Play',
+                icon: Icon(Icons.play_arrow),
+                textStyle: myTextStyle17(),
+                callback: () {
+                  print('Song Played');
+                },
+              ),
+            ),
+            Container(height: 11,),
+            Container(
+              width: 150,
+              height: 50,
+              child: RoundedButton(
+                buttonName: 'Pause',
+                icon: Icon(Icons.pause),
+                textStyle: myTextStyle17(),
+                bgColor: Colors.deepOrange,
+                callback: () {
+                  print('Song Paused');
+                },
+              ),
+            ),
+          ],
         ),
-        body: Container(
-          width: 400,
-          height: 400,
-          child: Stack(
-            children: [
-              Container(
-                height: 200,
-                width: 200,
-                color: Colors.blueGrey
-              ),
-              Positioned(
-                left: 21,
-                top: 21,
-                child: Container(
-                  height: 200,
-                  width: 200 ,
-                  color: Colors.cyan
-                  ),
-              ),
-              ],
-            )
-        )
-        );
+      ),
+    );
   }
 }
-
-
