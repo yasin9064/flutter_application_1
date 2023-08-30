@@ -7,7 +7,7 @@
   
   
 <tr>                    
-<th>  1st Stack Widget View</th>
+<th>  Wrap Widget View</th>
   
 </tr>  
   
@@ -16,10 +16,8 @@
 <tr>
 
 
-
-
  <td>
-  <img src="https://github.com/yasin9064/flutter_application_1/assets/108936278/079d53c3-5392-4e82-862f-87e1d82a94c0" width="260"/>
+  <img src="https://github.com/yasin9064/flutter_application_1/assets/108936278/1761b8a4-3c14-4d5a-b66e-043d9d38450e" width="260"/>
  </td>
 
 
