@@ -19,39 +19,57 @@ class _HomeScreenState extends State<HomeScreen> {
       appBar: AppBar(
         title: const Text("Custom Widget"),
       ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+      body: Container(
+        width: double.infinity,
+        child: Wrap(
+          direction: Axis.horizontal,
+          spacing: 11,
+          runSpacing: 11,
+          alignment: WrapAlignment.,
           children: [
             Container(
-              width: 150,
-              height: 50,
-              child: RoundedButton(
-                buttonName: 'Play',
-                icon: Icon(Icons.play_arrow),
-                textStyle: myTextStyle17(),
-                callback: () {
-                  print('Song Played');
-                },
-              ),
+              width: 102.5,
+              height: 102.5,
+              color: Colors.black,
             ),
-            Container(height: 11,),
             Container(
-              width: 150,
-              height: 50,
-              child: RoundedButton(
-                buttonName: 'Pause',
-                icon: Icon(Icons.pause),
-                textStyle: myTextStyle17(),
-                bgColor: Colors.deepOrange,
-                callback: () {
-                  print('Song Paused');
-                },
-              ),
+              width: 102.5,
+              height: 102.5,
+              color: Colors.red,
+            ),
+            Container(
+              width: 102.5,
+              height: 102.5,
+              color: Colors.blue,
+            ),
+            Container(
+              width: 102.5,
+              height: 102.5,
+              color: Colors.yellow,
+            ),
+            Container(
+              width: 102.5,
+              height: 102.5,
+              color: Colors.green,
+            ),
+            Container(
+              width: 102.5,
+              height: 102.5,
+              color: Colors.pink,
+            ),
+            Container(
+              width: 102.5,
+              height: 102.5,
+              color: Colors.cyan,
+            ),
+            Container(
+              width: 102.5,
+              height: 102.5,
+              color: Colors.purple,
             ),
           ],
-        ),
-      ),
+          ),
+      )
     );
   }
 }
