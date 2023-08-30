@@ -25,7 +25,7 @@ class _HomeScreenState extends State<HomeScreen> {
           direction: Axis.horizontal,
           spacing: 11,
           runSpacing: 11,
-          alignment: WrapAlignment.,
+          alignment: WrapAlignment.center,
           children: [
             Container(
               width: 102.5,
