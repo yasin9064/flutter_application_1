@@ -17,7 +17,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Custom Widget"),
+        title: const Text("Wrap Widget"),
       ),
       body: Container(
         width: double.infinity,
