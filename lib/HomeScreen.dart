@@ -20,19 +20,21 @@ class _HomeScreenState extends State<HomeScreen> {
         title: const Text("Wrap Widget"),
       ),
       body: Center(
-        child: RichText(
-          text: TextSpan(
-            style: TextStyle(fontSize: 16,
-            color: Colors.black),
-            children: <TextSpan>[
-              TextSpan(text: 'Hello '),
-              TextSpan(text: 'Paradox.', style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold, color: Colors.blue)),
-              TextSpan(text: 'Welcome to '),
-              TextSpan(text: 'Flutter.', style: TextStyle(color: Colors.yellow, fontSize: 35, fontStyle: FontStyle.italic, fontWeight: FontWeight.bold, fontFamily: 'DancingScript'))
-            ]
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Icon(Icons.skip_previous, size: 75, color: Colors.lightBlue,),
+            SizedBox(
+             width: 11,
             ),
-            ),
-        ),
+            Icon(Icons.play_circle_outline, size: 100, color: Colors.lightBlue,),
+            SizedBox(
+              width: 11
+              ),
+            Icon(Icons.skip_next, size: 75, color: Colors.lightBlue,)
+          ],
+        )
+      )
     );
   }
 }
