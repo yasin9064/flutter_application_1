@@ -7,7 +7,7 @@
   
   
 <tr>                    
-<th>  Wrap Widget View</th>
+<th>  Icon Widget View</th>
   
 </tr>  
   
@@ -17,7 +17,7 @@
 
 
  <td>
-  <img src="https://github.com/yasin9064/flutter_application_1/assets/108936278/1761b8a4-3c14-4d5a-b66e-043d9d38450e" width="260"/>
+  <img src="https://github.com/yasin9064/flutter_application_1/assets/108936278/f186e24b-03b4-4a1a-be2b-bcc336f79d2d" width="260"/>
  </td>
 
 
