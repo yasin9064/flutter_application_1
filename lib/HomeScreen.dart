@@ -19,57 +19,20 @@ class _HomeScreenState extends State<HomeScreen> {
       appBar: AppBar(
         title: const Text("Wrap Widget"),
       ),
-      body: Container(
-        width: double.infinity,
-        child: Wrap(
-          direction: Axis.horizontal,
-          spacing: 11,
-          runSpacing: 11,
-          alignment: WrapAlignment.center,
-          children: [
-            Container(
-              width: 102.5,
-              height: 102.5,
-              color: Colors.black,
+      body: Center(
+        child: RichText(
+          text: TextSpan(
+            style: TextStyle(fontSize: 16,
+            color: Colors.black),
+            children: <TextSpan>[
+              TextSpan(text: 'Hello '),
+              TextSpan(text: 'Paradox.', style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold, color: Colors.blue)),
+              TextSpan(text: 'Welcome to '),
+              TextSpan(text: 'Flutter.', style: TextStyle(color: Colors.yellow, fontSize: 35, fontStyle: FontStyle.italic, fontWeight: FontWeight.bold, fontFamily: 'DancingScript'))
+            ]
             ),
-            Container(
-              width: 102.5,
-              height: 102.5,
-              color: Colors.red,
             ),
-            Container(
-              width: 102.5,
-              height: 102.5,
-              color: Colors.blue,
-            ),
-            Container(
-              width: 102.5,
-              height: 102.5,
-              color: Colors.yellow,
-            ),
-            Container(
-              width: 102.5,
-              height: 102.5,
-              color: Colors.green,
-            ),
-            Container(
-              width: 102.5,
-              height: 102.5,
-              color: Colors.pink,
-            ),
-            Container(
-              width: 102.5,
-              height: 102.5,
-              color: Colors.cyan,
-            ),
-            Container(
-              width: 102.5,
-              height: 102.5,
-              color: Colors.purple,
-            ),
-          ],
-          ),
-      )
+        ),
     );
   }
 }
