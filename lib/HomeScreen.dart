@@ -3,7 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/UI_Helper/utii.dart';
 import 'package:flutter_application_1/Widgets/Buttons.dart';
-import 'package:intl/intl.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -17,23 +17,17 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Wrap Widget"),
+        title: const Text("Font Awesome Icons Widget"),
       ),
-      body: Center(
+      body: const Center(
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Icon(Icons.skip_previous, size: 75, color: Colors.lightBlue,),
-            SizedBox(
-             width: 11,
-            ),
-            Icon(Icons.play_circle_outline, size: 100, color: Colors.lightBlue,),
-            SizedBox(
-              width: 11
-              ),
-            Icon(Icons.skip_next, size: 75, color: Colors.lightBlue,)
+            FaIcon(FontAwesomeIcons.amazon, size: 50,),
+            SizedBox(width:24),
+            FaIcon(FontAwesomeIcons.googlePlay, size: 50,)
           ],
-        )
+        ),
       )
     );
   }

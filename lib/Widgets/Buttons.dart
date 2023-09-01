@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class RoundedButton extends StatelessWidget {
@@ -8,7 +7,7 @@ class RoundedButton extends StatelessWidget {
   final TextStyle? textStyle;
   final VoidCallback? callback;
 
-  RoundedButton({
+  const RoundedButton({super.key, 
     required this.buttonName,
     this.icon,
     this.bgColor = Colors.blue,
@@ -22,6 +21,13 @@ class RoundedButton extends StatelessWidget {
         onPressed: () {
           callback!();
         },
+        style: ElevatedButton.styleFrom(
+          backgroundColor: bgColor,
+          shadowColor: bgColor,
+          shape: const RoundedRectangleBorder(
+            borderRadius: BorderRadius.all(Radius.circular(19))
+          )
+        ),
         child: icon!=null? Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -33,13 +39,6 @@ class RoundedButton extends StatelessWidget {
           ],
 
         ): Text(buttonName, style: textStyle,),
-        style: ElevatedButton.styleFrom(
-          backgroundColor: bgColor,
-          shadowColor: bgColor,
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.all(Radius.circular(19))
-          )
-        ),
       );
   }
 }
