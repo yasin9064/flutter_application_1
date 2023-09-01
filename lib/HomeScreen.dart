@@ -17,18 +17,26 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Font Awesome Icons Widget"),
+        title: const Text("Positioned Widget"),
       ),
-      body: const Center(
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
+      body: Container(
+        width: double.infinity,
+        height: double.infinity,
+        color: Colors.blueGrey,
+        child: Stack(
           children: [
-            FaIcon(FontAwesomeIcons.amazon, size: 50,),
-            SizedBox(width:24),
-            FaIcon(FontAwesomeIcons.googlePlay, size: 50,)
+            Positioned(
+              bottom: 41,
+              left: 41,
+              child: Container(
+                height: 100,
+                width: 100,
+                color: Colors.white,
+              ),
+            )
           ],
-        ),
-      )
+        ) ,
+        )
     );
   }
 }
