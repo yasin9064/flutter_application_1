@@ -7,8 +7,8 @@
   
   
 <tr>                    
-<th>  Wrap Widget View</th>
-  
+<th> 1st Navigator View</th>
+<th> 2nd Navigator View</th> 
 </tr>  
   
   
@@ -17,7 +17,11 @@
 
 
  <td>
-  <img src="https://github.com/yasin9064/flutter_application_1/assets/108936278/1761b8a4-3c14-4d5a-b66e-043d9d38450e" width="260"/>
+  <img src="https://github.com/yasin9064/flutter_application_1/assets/108936278/84894c4d-8b56-4867-a771-0c4735cbac96" width="260"/>
+ </td>
+
+ <td>
+  <img src="https://github.com/yasin9064/flutter_application_1/assets/108936278/8e356677-7b69-4d58-b9c2-7329d78f4da4" width="260"/>
  </td>
 
 
