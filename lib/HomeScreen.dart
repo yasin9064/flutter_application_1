@@ -19,10 +19,10 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text("Switching"),
+          title: Text('Splash Screen'),
         ),
         body: Center(
-          child: Text('Switching from One Screen to Another',
+          child: Text('Welcome Paradox',
           style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold, color: Colors.cyan),
           textAlign: TextAlign.center,
           ))
