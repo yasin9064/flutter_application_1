@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/HomeScreen.dart';
-import 'package:flutter_application_1/IntroScreen.dart';
+import 'package:flutter_application_1/StartingScreen.dart';
 import 'package:flutter_application_1/SplashScreen.dart';
 
 void main() {

@@ -1,10 +1,11 @@
-// ignore_for_file: file_names
+// ignore_for_file: file_names, unused_import, unnecessary_import, use_key_in_widget_constructors, prefer_const_constructors
 
 import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_application_1/HomeScreen.dart';
+import 'package:flutter_application_1/StartingScreen.dart';
 
 class SplashScreen extends StatefulWidget {
   @override
@@ -19,7 +20,7 @@ class _SplashScreenState extends State<SplashScreen> {
     Timer(Duration(seconds: 5), () {
       Navigator.pushReplacement(
         context, MaterialPageRoute(
-          builder: ((context) => HomeScreen())));
+          builder: ((context) => StartingScreen())));
     });
   }
 
