@@ -7,8 +7,8 @@
   
   
 <tr>                    
-<th> 1st Navigator View</th>
-<th> 2nd Navigator View</th> 
+<th> Splash Screen View</th>
+<th> Home Screen View</th> 
 </tr>  
   
   
@@ -17,16 +17,15 @@
 
 
  <td>
-  <img src="https://github.com/yasin9064/flutter_application_1/assets/108936278/84894c4d-8b56-4867-a771-0c4735cbac96" width="260"/>
+  <img src="https://github.com/yasin9064/flutter_application_1/assets/108936278/5d7ae479-ac2e-41fb-800f-1279d71cf35b" width="260"/>
  </td>
 
  <td>
-  <img src="https://github.com/yasin9064/flutter_application_1/assets/108936278/8e356677-7b69-4d58-b9c2-7329d78f4da4" width="260"/>
+  <img src="https://github.com/yasin9064/flutter_application_1/assets/108936278/270fb83f-05ca-4982-aa68-8b7b6d4f69ec" width="260"/>
  </td>
 
 
 </tr>
-
 
 
 </table>
