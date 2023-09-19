@@ -7,8 +7,8 @@
   
   
 <tr>                    
-<th> Splash Screen View</th>
-<th> Home Screen View</th> 
+<th> Data Input View</th>
+<th> Data Output View</th> 
 </tr>  
   
   
@@ -17,11 +17,11 @@
 
 
  <td>
-  <img src="https://github.com/yasin9064/flutter_application_1/assets/108936278/5d7ae479-ac2e-41fb-800f-1279d71cf35b" width="260"/>
+  <img src="https://github.com/yasin9064/flutter_application_1/assets/108936278/b4ee51fb-bbd0-4167-ab97-46ea4d0edfbb" width="260"/>
  </td>
 
  <td>
-  <img src="https://github.com/yasin9064/flutter_application_1/assets/108936278/270fb83f-05ca-4982-aa68-8b7b6d4f69ec" width="260"/>
+  <img src="https://github.com/yasin9064/flutter_application_1/assets/108936278/8e925eb2-d369-4801-9260-4fdbed7c3812" width="260"/>
  </td>
 
 
