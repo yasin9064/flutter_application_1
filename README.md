@@ -7,8 +7,8 @@
   
   
 <tr>                    
-<th> Data Input View</th>
-<th> Data Output View</th> 
+<th> Range Slider Blue View</th>
+<th> Range Slider Orange View</th> 
 </tr>  
   
   
@@ -17,12 +17,14 @@
 
 
  <td>
-  <img src="https://github.com/yasin9064/flutter_application_1/assets/108936278/b4ee51fb-bbd0-4167-ab97-46ea4d0edfbb" width="260"/>
+  <img src="https://github.com/yasin9064/flutter_application_1/assets/108936278/8af07e74-2196-4318-a99e-033b0d0511f6" width="260"/>
  </td>
 
  <td>
-  <img src="https://github.com/yasin9064/flutter_application_1/assets/108936278/8e925eb2-d369-4801-9260-4fdbed7c3812" width="260"/>
+  <img src="https://github.com/yasin9064/flutter_application_1/assets/108936278/6d3a8d00-d9f1-4a00-b19c-123fbf5a040d" width="260"/>
  </td>
+
+
 
 
 </tr>
