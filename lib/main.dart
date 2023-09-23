@@ -2,8 +2,6 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/HomeScreen.dart';
-import 'package:flutter_application_1/StartingScreen.dart';
-import 'package:flutter_application_1/SplashScreen.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -25,7 +23,7 @@ class MyApp extends StatelessWidget {
           titleMedium: TextStyle(fontSize: 20, fontWeight: FontWeight.w500, fontStyle: FontStyle.italic),
         )
       ),
-      home: SplashScreen(),
+      home: HomeScreen(),
     );
   }
 }
